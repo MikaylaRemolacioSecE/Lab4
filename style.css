@@ -5,8 +5,9 @@ body{
 h1{
     background-color:rgb(59, 72, 122);
     text-align: center;
-    font-size: 100px;
+    font-size: 70px;
     display: flex;
+    flex-wrap: nowrap;
     color: aliceblue;
 }
 
@@ -16,7 +17,7 @@ h1{
     flex-wrap: nowrap;
   }
 
-  .mechimgs > div > img {
+.mechimgs > div > img {
     background-color: #f1f1f1;
     width: 350px;
     margin: 15px;
@@ -25,17 +26,57 @@ h1{
     color: #7474b0;
   }
 
-  .stemimgs{
+.stemimgs{
     background-color: #7474b0;
     display: flex;
     flex-wrap: nowrap;
-  }
+}
 
-  .stemimgs > div > img {
+.stemimgs > div > img {
     background-color: #f1f1f1;
-    width: 350px;
+    width: 300px;
     margin: 15px;
     align-items: center;
     line-height: 600px;
     color: #7474b0;
-  }
+}
+
+.slide {
+    position: absolute;
+    animation: flyInOut 60s ease-in-out infinite;
+    opacity: 0;
+    display: flex;
+    align-items: center;
+}
+
+.slide:nth-child(1) { /*nth meaning object, child meaning object under main component(parent), (n) meaning specific object. sorted as objects are added to parent component*/
+    animation-delay: 0s;
+    
+}
+
+.slide:nth-child(2) {
+    animation-delay: 25s; 
+}
+
+.slide:nth-child(3) {
+    animation-delay: 45s; 
+}
+
+@keyframes slide { /*animation effect*/
+    0%, 100% { /* percentage on screen */
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    20%, 30% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+    70%, 80% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+}
+
+h1,h2,h3{
+    text-align: center;
+}

@@ -3,7 +3,7 @@ body{
 }
 
 header{
-    background-color:rgb(65, 79, 109);
+    background-color:#555981;
     font-size: 30px;
     color: rgb(9, 9, 37);
     width: 50%;
@@ -23,9 +23,9 @@ p{
 }
 
 nav{
-    font-size: 30px;
-    align-items: center;
-
+    margin-inline: 25%;
+    text-align: center;
+    justify-content: center;
 }
 
 li{
@@ -35,7 +35,7 @@ li{
 a{
     color: white;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 30px;
     padding: 10px 15px;
     transition: background-color 0.3s ease;
 }
@@ -46,7 +46,7 @@ a:hover {
 }
 
 .mechimgs{
-    background-color: #7474b0;
+    background-color: #555981;
     display: flex;
     flex-wrap: nowrap;
     justify-content: center;
@@ -59,11 +59,10 @@ a:hover {
     margin: 30px;
     align-items: center;
     line-height: 600px;
-    color: #7474b0;
   }
 
 .stemimgs{
-    background-color: #7474b0;
+    background-color: #555981;
     display: flex;
     flex-wrap: nowrap;
     justify-content: center;
@@ -76,7 +75,6 @@ a:hover {
     margin: 30px;
     align-items: center;
     line-height: 600px;
-    color: #7474b0;
 }
 
 .imgs_animation{
@@ -84,6 +82,7 @@ a:hover {
     display: flex;
     align-items: center;
     line-height: 600px;
+    flex-wrap: nowrap;
 }
 
 .slide {

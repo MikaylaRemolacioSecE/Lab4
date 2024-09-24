@@ -42,8 +42,7 @@ h1{
 }
 
 .slide {
-    position: absolute;
-    animation: flyInOut 60s ease-in-out infinite;
+    animation: slides 60s ease-in-out infinite;
     opacity: 0;
     display: flex;
     align-items: center;
@@ -51,7 +50,6 @@ h1{
 
 .slide:nth-child(1) { /*nth meaning object, child meaning object under main component(parent), (n) meaning specific object. sorted as objects are added to parent component*/
     animation-delay: 0s;
-    
 }
 
 .slide:nth-child(2) {
@@ -62,7 +60,7 @@ h1{
     animation-delay: 45s; 
 }
 
-@keyframes slide { /*animation effect*/
+@keyframes slides { /*animation effect*/
     0%, 100% { /* percentage on screen */
         transform: translateX(-100%);
         opacity: 0;

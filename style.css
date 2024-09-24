@@ -1,26 +1,62 @@
 body{
-    background-color: rgb(209, 209, 247);
+    background-color: rgb(19, 19, 46);
 }
 
-h1{
-    background-color:rgb(59, 72, 122);
+header{
+    background-color:rgb(65, 79, 109);
+    font-size: 30px;
+    color: rgb(9, 9, 37);
+    width: 50%;
+    margin-inline: 25%;
     text-align: center;
-    font-size: 70px;
-    display: flex;
-    flex-wrap: nowrap;
+    justify-content: center;
+    margin: auto;
+}
+
+p{
     color: aliceblue;
+    margin-inline: 25%;
+    text-align: center;
+    justify-content: center;
+    margin: auto;
+    width: 50%;
+}
+
+nav{
+    font-size: 30px;
+    align-items: center;
+
+}
+
+li{
+    display: inline;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 15px;
+    transition: background-color 0.3s ease;
+}
+
+a:hover {
+    background-color: #757f9d;
+    border-radius: 5px;
 }
 
 .mechimgs{
     background-color: #7474b0;
     display: flex;
     flex-wrap: nowrap;
+    justify-content: center;
+    align-self: center;
   }
 
 .mechimgs > div > img {
     background-color: #f1f1f1;
     width: 350px;
-    margin: 15px;
+    margin: 30px;
     align-items: center;
     line-height: 600px;
     color: #7474b0;
@@ -30,12 +66,14 @@ h1{
     background-color: #7474b0;
     display: flex;
     flex-wrap: nowrap;
+    justify-content: center;
+    align-self: center;
 }
 
 .stemimgs > div > img {
     background-color: #f1f1f1;
     width: 300px;
-    margin: 15px;
+    margin: 30px;
     align-items: center;
     line-height: 600px;
     color: #7474b0;
@@ -49,14 +87,19 @@ h1{
 }
 
 .slide {
-    animation: slides 120s ease-in-out infinite;
+    animation: slides 20s ease-in-out infinite;
     opacity: 0;
     display: flex;
     flex-wrap: nowrap;
     align-items: center;
-    line-height: 600px;
-    width: auto;
 
+}
+
+.slide > img {
+    width: 300px;
+    margin: 35px;
+    align-items: center;
+    line-height: 600px;
 }
 
 .slide:nth-child(1) { /*nth meaning object, child meaning object under main component(parent), (n) meaning specific object. sorted as objects are added to parent component*/
@@ -72,11 +115,11 @@ h1{
 }
 
 .slide:nth-child(4) {
-    animation-delay: 90s; 
+    animation-delay: 15s; 
 }
 
 .slide:nth-child(5) {
-    animation-delay: 120s; 
+    animation-delay: 20s; 
 }
 
 @keyframes slides { /*animation effect*/
@@ -94,6 +137,13 @@ h1{
     }
 }
 
-h1,h2,h3{
+h2,h3{
     text-align: center;
+    color: aliceblue;
 }
+
+iframe{
+    display: block;
+    margin: 0 auto;
+}
+
